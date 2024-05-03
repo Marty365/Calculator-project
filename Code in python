@@ -1,0 +1,49 @@
+print('Please select a mathematical operation')
+ print('1. Addition')
+ print('2. Subtraction')
+ print('3. Division')
+ print('4. Multiplication')
+
+ def main():
+
+  operation = input()
+
+  #Code to Addition with added ability to use an extra value
+  if operation == '1':
+      num1 = input('Enter the first number ')
+      num2 = input('Enter the second number ')
+      num3 = input('Enter the third number ')
+      print('The sum of the calculation is ' + str(int(num1) +       
+      int(num2)      + int(num3)))
+        
+  #Code to do subtraction with added ability to use an extra value
+  elif operation == '2':
+      num1 = input('Enter the first number ')
+      num2 = input('Enter the second number ')
+      num3 = input('Enter the third number ')
+      print('The sum of the calculation is ' + str(int(num1) - 
+      int(num2)      - int(num3)))
+  #Code to do division with added ability to use an extra value
+  elif operation == '3':
+      num1 = input('Enter the first number ')
+      num2 = input('Enter the second number ')
+      num3 = input('Enter the third number ')
+      print('The sum of the calculation is ' + str(int(num1) / 
+      int(num2) 
+      / int(num3)))
+      #Code to do multiplication with added ability to use an extra value
+  elif operation == '4':
+      num1 = input('Enter the first number ')
+      num2 = input('Enter the second number ')
+      num3 = input('Enter the third number ')
+      print('The sum of the calculation is ' + str(int(num1) * 
+      int(num2) 
+      * int(num3)))
+  else: print('Invalid entry please choose a number for one of the mathematical operations numbers 1-4 for chosen arithmetic')
+  #This code is the step required to make the code loop to the beginning as long as user wishes to continue and it will loop back to         the seciton above where the first main() is called.
+  restart = input('Would you like to try another calculation. if so type yes to start again or type anything else to stop? ')
+  if restart == 'yes':
+    main()
+  else:
+    print("Goodbye see you soon")
+    exit()
